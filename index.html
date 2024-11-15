@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Resume Builder</title>
+  <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+  <header>
+    <h1>Editable Resume Builder</h1>
+  </header>
+  <div class="container">
+    <form id="resume-form">
+      <h2>Personal Information</h2>
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" placeholder="Age" required>
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob" required>
+      </div>
+
+      <div class="form-group">
+        <label for="education">Qualification</label>
+        <input type="text" name="education" id="education" placeholder="Qualification" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="image-upload">Upload Image</label>
+        <input type="file" id="image-upload" accept="image/*">
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male" checked> Male
+        <input type="radio" name="gender" value="female"> Female
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea name="address" id="address" placeholder="Address" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+      </div>
+
+      <div class="form-group">
+        <label>Objective</label>
+        <textarea name="objective" id="objective" placeholder="Your career objective"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Skills</label>
+        <input type="text" id="skill-input" placeholder="Enter a skill">
+        <button type="button" id="add-skill-btn">Add Skill</button>
+      </div>
+
+      <div id="skills-list"></div>
+
+      <div class="form-group">
+        <label>Work Experience</label>
+        <textarea id="work-experience" placeholder="Enter your work experience"></textarea>
+      </div>
+
+      <button type="button" id="generateResume">Generate Resume</button>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <p>© 2024 Professional Resume Builder</p>
+    <span>Created by Abdul Uzair</span>
+  </footer>
+
+  <script src="resume.js"></script>
+</body>
+</html>

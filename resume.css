@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #333;
+}
+
+/* Container for Form */
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  font-style: italic;
+}
+h2 {
+  text-align: center;
+  color: #000000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 2.3rem;
+  margin-bottom: 30px;
+}
+
+header {
+  background-color: #34495e;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #34495e;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Flex styling for label and input */
+.form-group {
+
+  align-items: center;
+  justify-content:center;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+  font-size:1.7rem;
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #34495e;
+  flex: 1;
+}
+
+form input[type="text"], form input[type="number"], form input[type="email"],
+form input[type="tel"], form input[type="date"], form textarea, form input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 15px;
+  border: 1px solid #ccd1d9;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+  flex: 2;
+}
+
+form input[type="text"]:focus, form input[type="number"]:focus,
+form input[type="email"]:focus, form input[type="tel"]:focus, form textarea:focus {
+  border-color: #5dade2;
+  outline: none;
+}
+
+/* Button Styling */
+.button-container, #add-skill-btn, #generateResume {
+  padding: 12px 24px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.button-container:hover, #add-skill-btn:hover, #generateResume:hover {
+  background-color: #2980b9;
+}
+
+/* Skills List */
+#skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.skill-row {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.remove-skill-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: color 0.2s ease;
+}
+
+.remove-skill-btn:hover {
+  color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
