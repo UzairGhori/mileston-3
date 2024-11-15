@@ -150,7 +150,8 @@ function generateResume(): void {
                         }
                         .right-section h2 {
                             color: #00796b;
-                            font-family:times, "Times New Roman",;
+                            font-family: "Times New Roman",Times,serif;
+                            font-size:2rem;
                             font-weight: bold;
                             font-style: italic;
                             border-bottom: 2px solid #ff9800;
@@ -159,7 +160,15 @@ function generateResume(): void {
                         }
 
                         .right-section p {
-                        font-size: 18px;
+                        font-size: 20px;
+                        font-family:'Times New Roman', Times, serif;
+                        font-style: italic;
+                        
+                        }
+
+                        .objective,workExprience {
+                        font-size: 20px;
+                        font-family:'Times New Roman', Times, serif;
                         font-style: italic;
                         
                         }
@@ -167,11 +176,14 @@ function generateResume(): void {
                         ul li {                            
                             padding: 0;
                             margin-top: 05px;
+                            font-family:'Times New Roman', Times, serif;
+                            font-style: italic;
+                            font-size: 20px;
                         }
                         img {
                             border-radius: 50%;
-                            width: 200px;
-                            height: 200px;
+                            width: 220px;
+                            height: 220px;
                             object-fit: cover;
                         }
                         img:hover {
